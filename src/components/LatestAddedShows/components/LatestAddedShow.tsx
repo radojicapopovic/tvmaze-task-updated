@@ -36,7 +36,7 @@ export const LatestAddedShow: FC<LatestAddedShowProps> = ({
   return (
     <Grid
       item
-      xs={12}
+      xs={6}
       sm={2}
       data-testid="latestshowitem"
       onClick={handleOnClick}

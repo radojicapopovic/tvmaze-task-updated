@@ -21,13 +21,13 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const LatestAddedShows: FC<LatestAddedShowsProps> = ({ episodes }) => {
   return (
-    <div
+    <div 
       data-testid="latestaddedshows-container"
       className="bg-transparent z-40 cursor-pointer items-center justify-center space-y-7 pl-[50px] pr-[50px]"
     >
       <LatestAddedShowTitle />
 
-      <Grid container spacing={3} data-testid="episodes-container">
+      <Grid container xs="auto" spacing={3} data-testid="episodes-container">
         {!episodes && <LatestAddedShowPending />}
         {episodes?.map((episode) => (
           <LatestAddedShow key={episode.id} episode={episode} />
